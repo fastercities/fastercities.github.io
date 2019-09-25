@@ -59,8 +59,14 @@ ol {
 /*------------------------
   Helper css
 --------------------------*/
+.p-o {
+  font-size: 18px;
+  color: #516469;
+  line-height: 1.8;
+}
+
 .body-pad {
-  padding: 0 350px;
+  padding: 0 20%;
 }
 
 .spad {
@@ -68,7 +74,8 @@ ol {
 }
 
 .logo {
-  max-width: 80%;
+  width: 75%;
+  height: auto;
 }
 
 .pt100 {
@@ -169,6 +176,7 @@ ol {
 
 .site-btn.btn-fade {
   background-color: #979797;
+  margin-top: 20px;
 }
 
 .site-btn.btn-line {
@@ -388,9 +396,8 @@ ol {
 }
 
 .header-btn-secondary {
-  float: right;
-  margin-right: 10px;
-  min-width: 70px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .red-usa {
@@ -585,6 +592,10 @@ ol {
   color: #979797;
 }
 
+.section-pad {
+  padding-top: 65px;
+  padding-bottom: 85px;
+}
 /*------------------------
     Blog Page
 --------------------------*/
@@ -688,6 +699,11 @@ ol {
   font-style: italic;
 }
 
+.call_min_area {
+  background: lightgray;
+  text-align: center;
+}
+
 /* ===========================
   Responsive
 ==============================*/
@@ -700,7 +716,7 @@ ol {
 /* Medium screen : 992px. */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .portfolio-item {
-    height: 450px;
+    height: auto;
   }
 }
 
@@ -708,9 +724,10 @@ ol {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .body-pad {
     padding: 0 30px;
+    padding-top: 65px;
   }
   .portfolio-item {
-    height: 350px;
+    height: auto;
   }
 }
 
@@ -718,6 +735,7 @@ ol {
 @media only screen and (max-width: 767px) {
   .body-pad {
     padding: 0 15px;
+    padding-top: 65px;
   }
   .main-menu {
     position: absolute;
