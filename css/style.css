@@ -74,7 +74,7 @@ ol {
 }
 
 .logo {
-  width: 75%;
+  width: 180px;
   height: auto;
 }
 
@@ -440,9 +440,9 @@ ol {
   cursor: pointer;
 }
 
-.portfolio-filter li.mixitup-control-active {
+/* .portfolio-filter li.mixitup-control-active {
   color: #001418;
-}
+} */
 
 .portfolios-area .gallery-block {
   padding: 0;
@@ -514,7 +514,7 @@ ol {
   display: block;
 }
 
-.img-popup-warp .mfp-content {
+/* .img-popup-warp .mfp-content {
   opacity: 0;
   -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
@@ -529,7 +529,7 @@ ol {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-}
+} */
 
 /*------------------------
     Footer Section
