@@ -56,6 +56,11 @@ ol {
   margin: 0;
 }
 
+label {
+  display: inherit;
+  margin-bottom: inherit;
+}
+
 /*------------------------
   Helper css
 --------------------------*/
@@ -670,7 +675,7 @@ ol {
   border: none;
   border-bottom: 2px solid #000;
   margin-bottom: 30px;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .contact-form textarea {
@@ -680,7 +685,7 @@ ol {
   border: none;
   border-bottom: 2px solid #000;
   margin-bottom: 30px;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .contact-form ::-webkit-input-placeholder {
