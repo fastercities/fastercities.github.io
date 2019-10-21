@@ -678,6 +678,24 @@ label {
   font-size: 16px;
 }
 
+.contact-form select {
+  padding-left: 25px;
+  height: 60px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000;
+  margin-bottom: 30px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #757575;
+  /* font-style: italic; */
+  display: inline-block;
+}
+
+.contact-form select option {
+  padding-left: 25px;
+}
+
 .contact-form textarea {
   padding-left: 25px;
   height: 200px;

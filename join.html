@@ -43,13 +43,13 @@
 					</div>
 
 					<div class="col-lg-8 col-md-9">
-						<a href="" class="site-btn header-btn">Get in touch</a>
+						<a href="contact.html" class="site-btn header-btn">Get in touch</a>
 						<nav class="main-menu">
 							<ul>
 
 								<li><a href='index.html'>Home</a></li>
 								<li><a href='about.html'>About</a></li>
-								<li><a href=#>Contact</a></li>
+								<li><a href='contact.html'>Contact</a></li>
 								<li><a href='join.html'>Join Us</a></li>
 							</ul>
 						</nav>
@@ -67,8 +67,7 @@
 			<div class="container text-center">
 				<div class="row">
 					<div class="col-xl-10 offset-xl-1">
-						<h2 class="section-title">Experience <span> Faster Cities</span>, the most
-							reliable name in home improvement</h2>
+						<h2 class="section-title">Are you a great team player?</h2>
 					</div>
 				</div>
 			</div>
@@ -81,8 +80,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 offset-lg-3 contect-tect">
-						<h2>So, let’s talk</h2>
-						<p>Feel free to ask us anything and we'll be happy to help you in no time!</p>
+						<h2>Join us today!</h2>
+						<p>From cleaners to handymen, we are always looking for service professionals who are experts in their trade and provide great service to their customers.</p>
 					</div>
 				</div>
 				<form class="contact-form"
@@ -96,17 +95,29 @@
 							<input type="email" id="reply_to" placeholder="E-mail" required>
 						</div>
 						<div class="col-md-6">
-							<input type="text" id="subject" placeholder="Subject" required>
+							<input type="text" id="phone" placeholder="Phone" required>
 						</div>
 						<div class="col-md-6">
-							<input type="text" id="services" placeholder="In a few words, what can we help you with?" required>
+								<select name="service">
+										<option value="Cleaner">Cleaner</option>
+										<option value="Painter">Painter</option>
+										<option value="Pest Control">Pest Control</option>
+										<option value="Electrican">Electrican</option>
+										<option value="Handyman">Handyman</option>
+										<option value="Lawn Care">Lawn Care</option>
+										<option value="Plumber">Plumber</option>
+										<option value="Smart Home">Smart Home</option>
+										<option value="Garage Door Installer">Garage Door Installer</option>
+										<option value="Other">Other</option>
+									  </select>
+							<!-- <input type="text" id="services" placeholder="Services you provide" required> -->
 						</div>
 						<div class="col-md-12">
-							<textarea id="message" placeholder="Message" required></textarea>
+							<textarea id="message" placeholder="Tell us a bit about your professional background..." required></textarea>
 						</div>
 					</div>
 					<div class="text-center">
-						<button class="site-btn">Send</button>
+						<button class="site-btn">Apply</button>
 					</div>
 				</form>
 				<p id="js-form-response-negative" style="color:#bd2130"></p>
