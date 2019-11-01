@@ -85,7 +85,7 @@
 					</div>
 				</div>
 				<form class="contact-form"
-					action="https://p0uudcqo1a.execute-api.us-east-1.amazonaws.com/dev/site-mailer"
+					action="https://p0uudcqo1a.execute-api.us-east-1.amazonaws.com/dev/site-mailer2"
 					method="POST">
 					<div class="row">
 						<div class="col-md-6">
@@ -98,7 +98,7 @@
 							<input type="text" id="phone" placeholder="Phone" required>
 						</div>
 						<div class="col-md-6">
-								<select name="service">
+								<select name="services" id="services">
 										<option value="Cleaner">Cleaner</option>
 										<option value="Painter">Painter</option>
 										<option value="Pest Control">Pest Control</option>
@@ -108,6 +108,7 @@
 										<option value="Plumber">Plumber</option>
 										<option value="Smart Home">Smart Home</option>
 										<option value="Garage Door Installer">Garage Door Installer</option>
+										<option value="AC Technician">AC Technician</option>
 										<option value="Other">Other</option>
 									  </select>
 							<!-- <input type="text" id="services" placeholder="Services you provide" required> -->
@@ -176,6 +177,8 @@
 		// Log what our lambda function will receive
 		console.log(JSON.stringify(data));
 	 
+		console.log(formElements);
+
 		// Construct an HTTP request
 		var xhr = new XMLHttpRequest();
 		xhr.open(form.method, form.action, true);
@@ -187,7 +190,7 @@
 	
 		// Callback function
 		xhr.onloadend = response => {
-		  if (response.target.status !== 200) {
+		  if (response.target.status == 200) {
 			// The form submission was successful
 			form.reset();
 			const formResponse = document.querySelector('#js-form-response-positive');

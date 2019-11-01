@@ -176,7 +176,7 @@
 	
 		// Callback function
 		xhr.onloadend = response => {
-		  if (response.target.status !== 200) {
+		  if (response.target.status == 200) {
 			// The form submission was successful
 			form.reset();
 			const formResponse = document.querySelector('#js-form-response-positive');
