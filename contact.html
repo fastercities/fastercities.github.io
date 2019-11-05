@@ -4,7 +4,10 @@
 		<title>Faster Cities Est. Contact</title>
 		<meta charset="UTF-8">
 		<meta name="description" content="Faster Cities Est.">
-		<meta name="keywords" content="faster cities, cleaning, home services, creative, html, about, saudi, home improvement, ac maintenance, electricity, painting, electrical, air conditioning, pest control, plumbing, contracts, telecommunications">
+		<meta name="keywords" content="faster cities, cleaning, home services,
+			creative, html, about, saudi, home improvement, ac maintenance, electricity,
+			painting, electrical, air conditioning, pest control, plumbing, contracts,
+			telecommunications">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Favicon -->
 		<link href="img/favicon.ico" rel="shortcut icon" />
@@ -96,10 +99,18 @@
 							<input type="email" id="reply_to" placeholder="E-mail" required>
 						</div>
 						<div class="col-md-6">
+							<label><input type="text" id="address" placeholder="Address" /></label>
+						</div>
+						<div class="col-md-6">
+							<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone"
+								placeholder="Phone" />
+						</div>
+						<div class="col-md-6">
 							<input type="text" id="subject" placeholder="Subject" required>
 						</div>
 						<div class="col-md-6">
-							<input type="text" id="services" placeholder="In a few words, what can we help you with?" required>
+							<input type="text" id="services" placeholder="In a few words, what can we
+								help you with?">
 						</div>
 						<div class="col-md-12">
 							<textarea id="message" placeholder="Message" required></textarea>
@@ -111,10 +122,10 @@
 				</form>
 				<p id="js-form-response-negative" style="color:#bd2130"></p>
 				<p id="js-form-response-positive" style="color:#209c3c"></p>
-				
+
 			</div>
 		</section>
-		
+
 		<!-- page section end -->
 
 		<!-- footer section start -->
@@ -122,8 +133,11 @@
 			<div class="container">
 				<div class="social-links">
 					<!-- <a href=""><span class="fa fa-pinterest"></span></a> -->
-					<!-- <a href=""><span class="fa fa-linkedin"></span></a> -->
-					<!-- <a href=""><span class="fa fa-instagram"></span></a> -->
+					<a
+						href="https://www.linkedin.com/company/fastercities-for-home-maintenance"><span
+							class="fa fa-linkedin"></span></a>
+					<a href="https://www.instagram.com/faster_cities/"><span class="fa
+							fa-instagram"></span></a>
 					<!-- <a href=""><span class="fa fa-facebook"></span></a> -->
 					<a href="https://twitter.com/fastercities2?lang=ar"><span class="fa
 							fa-twitter"></span></a>
@@ -145,6 +159,8 @@
 		<script src="js/mixitup.min.js"></script>
 		<script src="js/magnific-popup.min.js"></script>
 		<script src="js/main.js"></script>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDSo34RjBorS-JAnd0CKKSIoLefZ8XcCR0"></script>
 	</body>
 </html>
 
@@ -190,4 +206,23 @@
 		};
 	  };
 	})();
+	</script>
+<script>
+	var searchInput = 'address';
+
+$(document).ready(function () {
+    var autocomplete;
+    autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
+        types: ['geocode'],
+    });
+	
+    google.maps.event.addListener(autocomplete, 'place_changed', function () {
+        var near_place = autocomplete.getPlace();
+        document.getElementById('loc_lat').value = near_place.geometry.location.lat();
+        document.getElementById('loc_long').value = near_place.geometry.location.lng();
+		
+        document.getElementById('latitude_view').innerHTML = near_place.geometry.location.lat();
+        document.getElementById('longitude_view').innerHTML = near_place.geometry.location.lng();
+    });
+});
 	</script>
