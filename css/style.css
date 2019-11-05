@@ -87,6 +87,10 @@ label {
   padding-top: 100px;
 }
 
+.pt60 {
+  padding-top: 60px;
+}
+
 .set-bg {
   background-repeat: no-repeat;
   background-size: cover;
