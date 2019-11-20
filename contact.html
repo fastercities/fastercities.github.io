@@ -102,11 +102,12 @@
 							<label><input type="text" id="address" placeholder="Address" /></label>
 						</div>
 						<div class="col-md-6">
-							<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone"
-								placeholder="Phone" />
+							<input type="tel"  id="phone" placeholder="Phone"/>
 						</div>
 						<div class="col-md-6">
-							<input type="date" id="date" placeholder="Date of service" required>
+								<input type="text" id="date" placeholder="Date of Service"
+								onfocus="(this.type='date')"
+								onblur="(this.type='text')" required> 
 						</div>
 						<div class="col-md-6">
 							<input type="text" id="services" placeholder="In a few words, what can we help you with?">
